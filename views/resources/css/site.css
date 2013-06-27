@@ -1,0 +1,302 @@
+html{
+	position: relative;
+    min-height: 100%;
+}
+body{
+	margin: 0 0 100px;
+	overflow-y:scroll;
+}
+
+p,h1,h2,h3,h4,span,strong,a{
+	font-family: 'Open Sans','Helvetica','Arial', sans-serif;
+}
+
+h1{
+	font-size:32px;
+	color:#F79E80;
+	font-weight:100;
+	
+}
+
+h2{
+	font-size:14px;
+	color:#F79E80;
+	font-weight:100;
+	font-style:italic;
+	text-indent:2px;
+	margin-top:2px;
+}
+
+h3{
+	font-size:16px;
+	color:#F79E80;
+	font-weight:100;
+}
+
+strong{
+	font-weight:700;
+}
+
+p{
+	color:#808080;
+	font-size:14px;	
+	line-height:18px;
+}
+
+.logo{
+	 background:url(../img/header_logo.png) no-repeat 0 0;
+	 width:92px;
+	 height:119px;
+}
+
+.info_detail{
+	display:block;
+	text-indent:10px;
+	font-size:13px;
+}
+
+a{
+	text-decoration:none;
+}
+
+a.blue_link{
+	
+	padding: 2px 4px 4px 2px;	
+	margin-top: 2px;
+	color:#58B7DD;
+	transition: all 0.2s;
+
+}
+
+a.blue_link:hover{
+	background-color: #58B7DD;
+	color: white;
+}
+
+.read_more, .read_less{
+	font-size: 14px;	
+	font-weight: bold;	
+	white-space: nowrap;
+}
+
+#content{
+	width:75%;
+	margin:0 auto;
+}
+
+#content .logo{
+	display:block;
+	position:relative;
+	margin:0 auto;
+}
+
+#content .blocks{	
+	position:relative;
+	top:60px;
+}
+
+.blocks p{
+	margin-top:20px;
+}
+
+.next_class p{
+	margin-top:0;
+}
+
+
+#block1, #block2, #block3{
+	transition: height 0.2s;
+}
+
+.block{
+	margin-right:5%;
+	display:inline-block;
+	vertical-align:top;
+	width:29%;
+	min-width:200px;
+	overflow:hidden;
+	margin-bottom:20px;
+}
+
+
+#content .blocks #block3{
+	overflow:hidden;
+}
+
+
+
+#block3_wrap{
+	margin-right:0 !important;
+	overflow:visible !important;
+}
+
+.divider{
+	display:inline-block;
+	height:180px;
+	width:1px;
+	background-color:#D2E5A5;
+	position:relative;
+	right:2%;
+	top:54px;
+}
+
+.next_class{
+	float:right;
+	position:relative;
+	top:40px;
+}
+
+.info_block{
+	margin-top:12px;		
+}
+
+.info_block div{
+	background-color:#D1E4A5;
+	padding:7px 10px 5px 10px;
+	margin:5px 0px 0px 25px;
+	cursor:pointer;
+	color:black !important;
+	transition: all 0.2s;
+	
+}
+
+.info_block div:hover{
+	color:white !important;
+	background-color:#58B7DD;
+	
+}
+
+
+.info_block strong{
+	font-weight:700;
+	font-size:14px;
+	display:block;
+}
+
+.info_block p{
+	font-weight:100;
+	font-size:13px;
+	font-style:italic;
+}
+
+
+
+.background_image{	
+    background-repeat:no-repeat;
+}
+
+#main{
+    width:100%;
+}
+
+#top_gradient{
+	z-index:-1;
+	position:absolute;
+    height:100%;
+    width:100%;
+    background-image: url("../img/blue_gradient_bg.png");
+    background-repeat: repeat-x;
+    background-color:white;
+	background-position:0 -85px;
+} 
+
+#header{
+     position:relative;
+	 top:0;
+	 width:100%;
+	 
+}
+
+
+#header .background_image{
+	height:127px;    
+	margin:0 auto;
+    background-image: url("../img/top_shape.png");    
+	background-position:50% -30px;
+}
+
+#footer{
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+	z-index:-1;
+	overflow:hidden;
+}
+
+#footer .background_image{
+	margin:0 auto;
+	height:100px;
+	background-repeat:no-repeat;
+    background-image: url("../img/bottom_shape.png");
+	background-position:50% 0px;	
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    
+}
+
+
+@media (max-width: 920px) {
+  .divider {
+    display: none !important;
+  }
+  .block{
+	width:100%;
+  }
+  h1{font-size:42px;}
+  h2,h3{font-size:25px;}
+  h1, h2{
+	text-align:center;
+  }
+  .next_class{
+	float:none;
+  }
+  .read_more, .read_less{
+	display: block;
+	text-align: center;
+	font-size: 25px;
+	margin-top: 10px;
+	padding: 10px;
+  }
+  .info_detail{
+	font-size:27px;
+  }
+  p{
+	color: #808080;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 100;
+  }
+  
+  .logo{
+	 background:url(../img/header_logo_large.png) no-repeat 0 0;
+	 width:200px;
+	 height:259px;
+  }
+  
+  #content .next_class .info_block strong{
+		font-size:27px;
+  }
+  
+  #content .next_class .info_block p{
+		font-size:24px;
+		display:inline-block;
+  }
+  
+}
