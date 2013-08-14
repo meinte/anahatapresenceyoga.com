@@ -103,7 +103,7 @@ function merthyr_clickHandler(){
 		window.onresize=function(){
 			sizeToParagraph(document.getElementById('block1'));
 			sizeToParagraph(document.getElementById('block2'));
-			sizeToParagraph(document.getElementById('block3'));
+			//sizeToParagraph(document.getElementById('block3'));
 		}
 	}
 
