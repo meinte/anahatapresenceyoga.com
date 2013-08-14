@@ -8,6 +8,18 @@ function folder_clickHandler(){
 	return true;
 }
 
+function highgate_clickHandler(){
+	ga('send', 'event', 'Show Highgate', 'click');
+	window.open('https://maps.google.com/maps?q=49+Gladstone+Road,+Highgate+Hill,+Queensland,+Australia&hl=en&ll=-27.485015,153.019692&spn=0.001673,0.00327&sll=-27.48485,153.020175&sspn=0.006653,0.013078&hnear=49+Gladstone+Rd,+Highgate+Hill+Queensland+4101,+Australia&t=m&z=19','_blank');
+	return true;
+}
+
+function merthyr_clickHandler(){
+	ga('send', 'event', 'Show Merthyr', 'click');
+	window.open('https://maps.google.com/maps?q=loc:+-27.475332,153.045607&hl=en&ll=-27.474818,153.044497&spn=0.003327,0.006539&sll=35.487895,-87.332414&sspn=0.006106,0.013078&t=m&z=18','_blank');
+	return true;
+}
+
 (function configureDates(){
 	var dateContainer =null;
 	var locationContainer=null;
@@ -71,7 +83,7 @@ function folder_clickHandler(){
 		var d = new Date();
 		return d.getHours()>=10 && d.getDay()==3;
 	}
-	init();
+	//init(); automatic dating is suspended for now
 })();
 
 (function configureReadMore(){
@@ -86,7 +98,7 @@ function folder_clickHandler(){
 	
 		addReadmoreToID('block1');
 		addReadmoreToID('block2');
-		addReadmoreToID('block3');
+		//addReadmoreToID('block3');
 		
 		window.onresize=function(){
 			sizeToParagraph(document.getElementById('block1'));

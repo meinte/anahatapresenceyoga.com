@@ -141,13 +141,13 @@ a.blue_link:hover{
 }
 
 .next_class{
-	float:right;
 	position:relative;
-	top:40px;
+	top:20px;
 }
 
 .info_block{
-	margin-top:12px;		
+	margin-top:12px;	
+
 }
 
 .info_block div{
@@ -157,6 +157,7 @@ a.blue_link:hover{
 	cursor:pointer;
 	color:black !important;
 	transition: all 0.2s;
+	width:100%;
 	
 }
 
@@ -173,10 +174,28 @@ a.blue_link:hover{
 	display:block;
 }
 
-.info_block p{
-	font-weight:100;
+.class_location{
+	font-weight:bold;
 	font-size:13px;
 	font-style:italic;
+	color:black;
+	margin-bottom:10px;
+}
+
+.class_time{
+	font-size:12px;
+	font-style:normal;
+	text-align: left;
+}
+
+.time{
+	color:black;
+	font-size:12px;
+	text-align: right;
+}
+
+.class_time .day{
+	float:left;
 }
 
 
@@ -296,7 +315,6 @@ a.blue_link:hover{
   
   #content .next_class .info_block p{
 		font-size:24px;
-		display:inline-block;
   }
   
 }

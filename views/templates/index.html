@@ -71,43 +71,50 @@ Created by M.A. van't Kruis, last updated 27/06/13
 				</div>
 				<div class="divider"></div>
 				<div id="block3_wrap" class="block">
-					<div id="block3" data-paragraph="2">
+					<div id="block3" data-paragraph="0">
 						<h1>CLASSES</h1>
 						<h2>when and where is Anahata Presence Yoga?</h2>
 						<p>
-							Anahata Presence Yoga is held two times a week on two seperate locations. Currently both classes are held on Wednesdays, one in the morning and one in the evening.							
+								Anahata Yoga is held on two seperate locations. Three morning classes (mon, wed & sat) are held in Merthyr Park and an evening class (wed) is held in 'the Hall' in Highgate Hill.
+
 						</p>
 						<p>
 							<a class='blue_link' href='img/folder.png' onclick='folder_clickHandler()' target='_blank'>View the information folder <span class='icon-link-ext'></span></a>
 						</p>
-						<p>
-							The morning class is in Merthyr Park and the evening class is at Highgate Hill.
-						</p>
-						<p style='margin-top:0px;'>
-							<strong style='line-height:40px;'>Wednesdays:</strong>
-							<span class='info_detail' style='margin-bottom:5px;'><strong>10.00 - 11.00 am</strong></span>
-							<span class='info_detail'>New Farm, Merthyr Park</span>
-							<span class='info_detail'>Short walk downstream from the Sydney Street pier</span>
-						</p>
-						<p>
-							<span class='info_detail' style='margin-bottom:5px;'><strong>6.30 - 7.30 pm</strong></span>
-							<span class='info_detail'>Highgate Hill, 49 Gladstone Road</span>
-							<span class='info_detail'>On the corner of Morris Street and Gladstone Road</span>
-							<span class='info_detail'>Parking area behind the building</span>
-						</p>
-						<p>From the 12of August I will also teach on the Monday morning from 9:15 - 10:15 am in Highgate Hill.</p>
-						
 					</div>
+					<!--
 					<div class="next_class">
 						<a id="nextclass_url" href='' onclick='nextclass_clickHandler()' target='blank'>
-							<div class="info_block">
+							<div class="info_block">								
 								<h3>Next class will be<span id='day_ref'></span></h3>
 								<div class="cf">
 									<strong id="nextclass_date">19th of June 10:00AM</strong>
 									<p><span id="nextclass_location">Merthyr Park</span><span class='icon-location' ></span></p>
-								</div>
+								</div>								
+
 							</div>
 						</a>						
+					</div>
+					-->
+					<div class="next_class">						
+						<div class="info_block">								
+							<h3>Classes will be held at</h3>
+							<div class="cf" onclick="merthyr_clickHandler()">
+								<p class="class_location"><span id="nextclass_location">Merthyr Park</span><span class='icon-location' ></span></p>
+								<p class="class_time">Monday Morning</p>
+								<p class='time'>06.30AM - 07.30AM</p>
+								<p class="class_time">Wednesday Morning</p>
+								<p class='time'>06.30AM - 07.30AM</p>
+								<p class="class_time">Saturday Morning</p>
+								<p class='time'>07.30AM - 08.30AM</p>
+								
+							</div>
+							<div class="cf" onclick="highgate_clickHandler()">
+								<p class="class_location"><span id="nextclass_location">Highgate Hill</span><span class='icon-location' ></span></p>
+								<p class="class_time">Wednesday Evening</p>
+								<p class='time'>06.30PM - 07.30PM</p>
+							</div>
+						</div>											
 					</div>
 				</div>				
 			</div>			

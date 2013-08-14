@@ -2,7 +2,8 @@ GLOBAL.__approot = __dirname;
 var express = require("express")  
     ,path = require('path')   
     ,startupCommands = require('./controllers/startupCommands.js')   
-    ,app = express();
+    ,app = express()
+    ,argv = require('optimist').argv;
    
 //,startupCommands = require(GLOBAL.__approot+'/controllers/startupCommands.js')
 app.use(express.static(path.join(__dirname, '/views/resources')));
@@ -23,8 +24,17 @@ startupCommands.setupRenderEngine(app);
 var PORT =(process.env.PORT)?process.env.PORT:8080;
 var IP=(process.env.IP)?process.env.IP:null;
 
+console.log("args:",argv);
+if(argv.p>100){
+	PORT = argv.p;
+}
+
+console.log("listeneing on ",IP,":",PORT);
+
 if(IP){
     app.listen(PORT,IP);
 }else{
     app.listen(PORT);
 }
+
+module.exports = app;
